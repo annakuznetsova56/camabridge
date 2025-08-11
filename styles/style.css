@@ -1,0 +1,149 @@
+:root {
+    /* --accent-color: rgb(222,31,35); */
+    --accent-color: black;
+    /* --main-color: white; */
+    --main-color: rgb(247,228,195);
+}
+
+.page {
+    background-color: var(--main-color);
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: black;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: rgb(222,31,35);
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: 'Fira Serif', serif;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header__logo {
+    width: 100%;
+}
+
+.header__menu {
+    width: 70%;
+    padding: 20px;
+    font-size: 20px;
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.accent-block {
+    width: 100%;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    padding: 15px 30px;
+}
+
+.main__about {
+    border-width: 3px;
+}
+
+.main__teachers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.main-title {
+    padding-left: 32px;
+    margin-bottom: 20px;
+}
+
+.main__teachers-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.main__teacher {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+
+.main__teacher-photo {
+    width: 250px;
+}
+
+.main__teacher-info {
+    padding-top: 20px;
+}
+
+.main__contacts-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* gap: 30px; */
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.main__contacts-photo {
+    width: 30%;
+    justify-self: flex-end;
+}
+
+.main__contacts-list {
+    list-style: disc;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    margin-left: -5%;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    border-top: 3px solid var(--accent-color);
+}
+
+.footer__text {
+    margin: 5px auto;
+}
