@@ -147,3 +147,40 @@ h3 {
 .footer__text {
     margin: 5px auto;
 }
+
+@media (width <= 768px) {
+    .page {
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__menu-list {
+        flex-direction: column;
+    }
+
+    .main__teachers {
+        flex-direction: column;
+    }
+
+    .main__teacher {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__contacts-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .main__contacts-list {
+        /* justify-content: start; */
+        text-align: left;
+        gap: 5px;
+    }
+
+    .main__contacts-photo {
+        width: 70%;
+        justify-self: center;
+    }
+}
