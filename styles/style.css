@@ -28,6 +28,10 @@ h3 {
     font-size: 24px;
 }
 
+h4 {
+    font-style: italic;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -60,8 +64,8 @@ h3 {
     flex-direction: column;
     width: 100%;
     gap: 50px;
-    align-items: center;
-    padding: 30px 40px;
+    align-items: left;
+    padding: 30px 50px;
 }
 
 .accent-block {
@@ -73,6 +77,35 @@ h3 {
 
 .main__about {
     border-width: 3px;
+}
+
+.main__about-list, 
+.main__education-list {
+    list-style: none; /* Убираем стандартные маркеры */
+    padding-left: 20px; /* Отступ для галочек */
+}
+
+.main__about-list li::before {
+    content: "✓ "; /* Вставляем галочку */
+    color: green; /* Цвет галочки */
+    margin-right: 5px; /* Отступ между галочкой и текстом */
+}
+
+.main p {
+    margin: 10px 0;
+}
+
+.main__education {
+    padding-left: 32px;
+    margin-bottom: 30px;
+}
+
+.main__education p {
+    margin-bottom: 20px;
+}
+
+.main__education-list {
+   list-style-type: circle; 
 }
 
 .main__teachers {
@@ -133,11 +166,19 @@ h3 {
     padding: 40px 0;
 }
 
+.main__documents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
     width: 110%;
     margin-left: -5%;
+    margin-bottom: 20px;
     height: 100px;
     text-align: center;
     justify-content: center;
@@ -146,6 +187,13 @@ h3 {
 
 .footer__text {
     margin: 5px auto;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: space-around;
 }
 
 @media (max-width: 768px) {
