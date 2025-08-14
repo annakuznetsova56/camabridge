@@ -206,6 +206,11 @@ h4 {
     .page {
         align-items: center;
         text-align: center;
+
+    }
+
+    p, ul, a {
+        font-size: 12px;
     }
 
     .header__menu-list {
