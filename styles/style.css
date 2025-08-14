@@ -209,8 +209,11 @@ h4 {
 
     }
 
-    p, ul, a {
+    .main p, 
+    .main ul, 
+    .main a {
         font-size: 12px;
+        text-align: left;
     }
 
     .header__menu-list {
