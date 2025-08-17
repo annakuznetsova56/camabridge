@@ -69,6 +69,8 @@ h4 {
 }
 
 .accent-block {
+    background-color: white;
+    box-shadow: 3px 3px 3px 0 black;
     width: 100%;
     border: 2px solid var(--accent-color);
     border-radius: 6px;
@@ -183,11 +185,12 @@ h4 {
     flex-direction: column;
     width: 110%;
     margin-left: -5%;
-    margin-bottom: 20px;
+    padding: 40px 0;
     height: 100px;
     text-align: center;
     justify-content: center;
     border-top: 3px solid var(--accent-color);
+    background-color: white;
 }
 
 .footer__text {
