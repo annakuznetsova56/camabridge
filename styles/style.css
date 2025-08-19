@@ -1,16 +1,30 @@
 :root {
     /* --accent-color: rgb(222,31,35); */
-    --accent-color: black;
+    --accent-color: rgb(113,124,138);
     /* --main-color: white; */
-    --main-color: rgb(247,228,195);
+    --main-color: rgb(33, 35, 35);
+    --text-color: rgb(200, 200, 200);
+    --accent-bg: rgb(44, 49, 54);
 }
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
 
 .page {
     background-color: var(--main-color);
     width: 100%;
     font-family: 'Fira Sans', sans-serif;
     font-size: 18px;
-    color: black;
+    color: var(--text-color);
     overflow-x: hidden;
 }
 
@@ -19,13 +33,14 @@ a:hover {
 }
 
 h2, h3 {
-    margin-bottom: 15px;
-    font-size: 30px;
-    font-family: 'Fira Serif', serif;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Fira Sans', serif;
+    font-weight: 300;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 30px;
 }
 
 h4 {
@@ -68,13 +83,21 @@ h4 {
     padding: 30px 50px;
 }
 
+.main p {
+    margin: 10px 0;
+}
+
 .accent-block {
-    background-color: white;
-    box-shadow: 3px 3px 3px 0 black;
+    background-color: var(--accent-bg);
+    box-shadow: 0px 0px 3px 2px white;
     width: 100%;
     border: 2px solid var(--accent-color);
-    border-radius: 6px;
+    /* border-radius: 6px; */
     padding: 15px 30px;
+    animation: slideIn 1s ease-out;
+    animation-timeline: view();
+    animation-range: entry 20% entry 100%;
+    animation-fill-mode: both;
 }
 
 .main__about {
@@ -94,17 +117,13 @@ h4 {
     margin-right: 5px;
 }
 
-.main p {
-    margin: 10px 0;
-}
-
 .main__education {
     padding-left: 32px;
     margin-bottom: 30px;
 }
 
-.main__education p {
-    margin-bottom: 20px;
+.main__education p:first-of-type {
+    margin-bottom: 70px;
 }
 
 .main__education-list {
@@ -127,7 +146,7 @@ h4 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 30px;
 }
 
 .main__teacher {
@@ -140,10 +159,11 @@ h4 {
 
 .main__teacher-photo {
     width: 250px;
+    height: auto;
 }
 
 .main__teacher-info {
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .main__teacher-experience li {
@@ -190,7 +210,7 @@ h4 {
     text-align: center;
     justify-content: center;
     border-top: 3px solid var(--accent-color);
-    background-color: white;
+    background-color: var(--main-color);
 }
 
 .footer__text {
